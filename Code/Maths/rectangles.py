@@ -6,3 +6,7 @@ class Rectangle:
     @property
     def surface(self):
         return self.height * self.width
+
+    @property
+    def perimeter(self):
+        return 2 * self.height + 2 * self.width

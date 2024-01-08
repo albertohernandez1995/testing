@@ -23,6 +23,7 @@ def test_rectangle_surface(height, width, reference):
 
     assert obj.surface == reference
 
+
 @mark.parametrize("height, width, reference", params_perimeter)
 def test_rectangle_perimeter(height, width, reference):
     obj = Rectangle(height, width)

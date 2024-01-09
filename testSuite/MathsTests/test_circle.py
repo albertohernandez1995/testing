@@ -2,7 +2,7 @@ from pytest import mark
 
 from Code.Maths.Circle import Circle
 
-params_area = [(3.14, 5, 78.5)]
+params_area = [(3.14, 5, 78.5), (3.14, 2, 12.56)]
 
 
 @mark.parametrize("pi, radio, reference", params_area)

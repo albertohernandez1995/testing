@@ -1,6 +1,6 @@
 from pytest import mark
 
-from Code.Students.Car import Car
+from Code.People.Car import Car
 
 params_car = [("Lamborghini", "Murcielago", 2005), ("Lexus", "coupe_sport", 2021)]
 

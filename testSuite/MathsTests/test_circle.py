@@ -2,11 +2,20 @@ from pytest import mark
 
 from Code.Maths.Circle import Circle
 
-params_area = [(3.14, 5, 78.5), (3.14, 2, 12.56)]
+params_area = [(5, 78.54), (2, 12.566)]
+
+params_circunference = [(5, 31.416)]
 
 
-@mark.parametrize("pi, radio, reference", params_area)
-def test_circle_area(pi, radio, reference):
-    obj = Circle(pi, radio)
+@mark.parametrize("radio, reference", params_area)
+def test_circle_area(radio, reference):
+    obj = Circle(radio)
 
     assert obj.circle_area == reference
+
+
+@mark.parametrize("radio, reference", params_circunference)
+def test_circle_circunference(radio, reference):
+    obj = Circle(radio)
+
+    assert obj.circle_circunference == reference

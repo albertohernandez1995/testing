@@ -1,6 +1,6 @@
 from pytest import mark
 
-from Code.Students.Stadistics_Student import Student
+from Code.People.Student import Student
 
 params_datos = [("Alberto", 29, 5), ("Javier", 25, 10)]
 

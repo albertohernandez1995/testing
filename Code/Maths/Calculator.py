@@ -5,6 +5,7 @@ class Calculator:
         self.a = a
         self.b = b
 
+    # Adding different methods to make our calculator work.
     @property
     def addition(self):
         return self.a + self.b
@@ -20,4 +21,3 @@ class Calculator:
     @property
     def division(self):
         return self.a // self.b
-

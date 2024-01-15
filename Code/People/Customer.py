@@ -19,7 +19,7 @@ class Customers:
         self.amount = amount
 
     @classmethod
-    def from_json(cls, filename):  # cls es la referencia a la clase
+    def from_json(cls, filename):  # cls is the reference of the class
         with open(filename, "r") as f:
             content = json.load(f)
         objects = []

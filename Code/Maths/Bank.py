@@ -1,5 +1,6 @@
 # Implement a program that simulates a basic bank account using BankAccount class:
 class BankAccount:
+    # We define methods with each of the actions that we can perform in our bank account.
     def __init__(self, cash):
         self.cash = cash
         self.movimiento = {}
@@ -20,7 +21,7 @@ class BankAccount:
         if len(self.movimiento) == 0:
             self.movimiento[1] = amount
         else:
-            #Cogemos la clave mas alta y le sumamos 1
+            #We take the highest key and add 1
             new_key = max(self.movimiento.keys())
             self.movimiento[new_key + 1] = amount
     @property

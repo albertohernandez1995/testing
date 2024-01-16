@@ -7,6 +7,8 @@ def is_primo(number):
     return True
 
 
+# With this function, we check if a number is prime or not.
+
 def prime_numbers(start, end):
     list_prime_numbers = []
     for x in range(start, end):
@@ -15,5 +17,6 @@ def prime_numbers(start, end):
     return list_prime_numbers
 
 
+# With this function, we get the prime numbers included in the range between two numbers
 if __name__ == '__main__':
     print(prime_numbers(2, 50))

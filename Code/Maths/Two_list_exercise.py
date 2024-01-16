@@ -17,5 +17,6 @@ def both_list(list1, list2):
     return unique_elements
 
 
+# Thanks to this function, we find the unique elements of two lists
 if __name__ == '__main__':
     print(both_list(list_1, list_2))

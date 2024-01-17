@@ -6,15 +6,7 @@ string_one = "ajheskpai"
 def number_vowels(string):
     count = 0
     for x in string:
-        if x == "a":
-            count += 1
-        if x == "e":
-            count += 1
-        if x == "i":
-            count += 1
-        if x == "o":
-            count += 1
-        if x == "u":
+        if x == "a" or "e" or "i" or "o" or "u":
             count += 1
     return count
 

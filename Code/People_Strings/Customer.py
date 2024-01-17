@@ -8,7 +8,7 @@ data["Costumers"] = []
 data["Costumers"].append({"Name": "Alberto", "Firstname": "Hernandez", "Amount": 369})
 data["Costumers"].append({"Name": "Javier", "Firstname": "Hernandez", "Amount": 258})
 
-with open("../../testSuite/PersonsTest/data/costumers.json", "w") as f:
+with open("../../testSuite/Persons_StringTest/data/costumers.json", "w") as f:
     json.dump(data, f, indent=4)
 
 

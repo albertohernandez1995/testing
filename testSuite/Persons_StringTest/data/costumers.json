@@ -1,12 +1,14 @@
-[
-  {
-    "Name": "Alberto",
-    "Firstname": "Hernandez",
-    "Amount": 369
-  },
-  {
-    "Name": "Javier",
-    "Firstname": "Hernandez",
-    "Amount": 258
-  }
-]
+{
+    "Costumers": [
+        {
+            "Name": "Alberto",
+            "Firstname": "Hernandez",
+            "Amount": 369
+        },
+        {
+            "Name": "Javier",
+            "Firstname": "Hernandez",
+            "Amount": 258
+        }
+    ]
+}

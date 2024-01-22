@@ -4,6 +4,7 @@
 PI = 3.141592
 
 
+# We define as parent class Shape, and then we create different subclasses with their respective methods.
 class Shape:
     def calculate_area(self):
         pass

@@ -17,9 +17,11 @@ class Circle(Shape):
     def __init__(self, radio):
         self.radio = radio
 
+    @property
     def calculate_area(self):
         return PI * self.radio ** 2
 
+    @property
     def calculate_perimeter(self):
         return (2 * PI) * self.radio
 
@@ -28,29 +30,31 @@ class Square(Shape):
     def __init__(self, side):
         self.side = side
 
+    @property
     def calculate_area(self):
         return self.side ** 2
 
+    @property
     def calculate_perimeter(self):
         return self.side * 4
 
 
 class Triangle(Shape):
-    def __init__(self, base, height, side1, side2, side3):
-        self.base = base
-        self.height = height
+    def __init__(self, side1, side2, side3):
         self.side1 = side1
         self.side2 = side2
         self.side3 = side3
 
+    @property
     def calculate_perimeter(self):
         return self.side1 + self.side2 + self.side3
 
+
+class TriangleArea(Shape):
+    def __init__(self, base, height):
+        self.base = base
+        self.height = height
+
+    @property
     def calculate_area(self):
         return (self.base * self.height) / 2
-
-
-if __name__ == '__main__':
-    triangle = Triangle(base=5, height=2, side1=5, side2=6, side3=9)
-    triangle_area = Triangle.calculate_area(triangle)
-    print(triangle_area)

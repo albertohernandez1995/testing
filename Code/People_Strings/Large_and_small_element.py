@@ -9,7 +9,9 @@ def large_and_smallest_element(elements):
     for x in elements:
         if len(x) > len(largest):
             largest = x
-        if smallest == len(x):
+        if len(x) < len(smallest):
+            smallest = x
+        if smallest == "":
             smallest = x
 
     return smallest, largest

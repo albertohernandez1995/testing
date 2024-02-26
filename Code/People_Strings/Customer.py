@@ -1,15 +1,6 @@
 # Given a json file with costumer data, create a Customer class to store
 # and manipulate the data
-
 import json
-
-data = {}
-data["Costumers"] = []
-data["Costumers"].append({"Name": "Alberto", "Firstname": "Hernandez", "Amount": 369})
-data["Costumers"].append({"Name": "Javier", "Firstname": "Hernandez", "Amount": 258})
-
-with open("../../testSuite/Persons_StringTest/data/costumers.json", "w") as f:
-    json.dump(data, f, indent=4)
 
 
 class Customers:
@@ -23,7 +14,8 @@ class Customers:
         with open(filename, "r") as f:
             content = json.load(f)
         objects = []
-        for x in content:
-            x = {k.lower(): v for k, v in x.items()}
-            objects.append(cls(**x))
+        for x in content.values():
+            for y in x:
+                y = {k.lower(): v for k, v in y.items()}
+                objects.append(cls(**y))
         return objects
